@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="thermometer.jpg">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="temp-converter">
+            <h2>Temperature Converter</h2>
+            <div class="input-temp">
+                <input type="text" id="temperature" placeholder="Enter the temperature in celsius">
+                <span>°C</span>
+            </div>
+            <div class="convert-to">
+                <h3>Convert To</h3>
+                <button id="kelvin" onclick="celsiusToKelvin()">Kelvin</button>
+                <button id="fahrenheit" onclick="celsiusToFahrenheit()">Fahrenheit</button>
+            </div>
+            <h3>Converted temperature</h3>
+            <p id="convertedvalue"></p>
+            <button id="clear" onclick="clearInput()">Clear</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

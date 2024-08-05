@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+.container {
+    display: flex;
+    background: linear-gradient(45deg, hsl(165, 72%, 80%), hsl(0, 100%, 87%));
+    width: 100%;
+    min-height: 100vh;
+}
+.temp-converter {
+    background-color: rgba(255, 255, 255, 0.815);
+    margin: auto;
+    padding: 30px 30px 40px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 480px;
+    height: 450px;
+}
+.temp-converter h2 {
+    font-size: 27px;
+    text-align: center;
+}
+.temp-converter>h3 {
+    margin: 20px 20px 20px;
+}
+.input-temp {
+    margin-top: 35px;
+    background-color: hsl(165, 72%, 80%);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9px;
+    border-radius: 15px;
+    height: 30px;
+}
+.input-temp input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+}
+.input-temp span {
+    position: relative;
+    right: 10px;
+    top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.convert-to {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.convert-to h3 {
+    width: 100%;
+    margin-left: 20px;
+}
+.convert-to label {
+    margin: 20px 20px 20px;
+    font-size: 18px;
+}
+.convert-to input {
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#kelvin {
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, hsl(165, 72%, 80%), hsl(0, 100%, 87%));
+    width: 120px;
+    margin: 30px auto 10px;
+}
+#fahrenheit {
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, hsl(165, 72%, 80%), hsl(0, 100%, 87%));
+    width: 120px;
+    margin: 30px auto 10px;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+    box-shadow: 2px 2px 5px rgb(81, 79, 79);
+}
+#convertedvalue {
+    text-align: center;
+    font-size: 25px;
+}
+#clear {
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    font-size: 17px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, hsl(165, 72%, 80%), hsl(0, 100%, 87%));
+    width: 120px;
+    margin: 30px 150px 0px;
+    position: fixed;
+}
